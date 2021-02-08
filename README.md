@@ -12,9 +12,9 @@ The purpose of this election audit and analysis is to determine the winner of an
 The analysis of this election has shown the following results:
 - There were **369,711 votes** in this election.
 - Breakdown of total votes by County:
-  - Denver has 306,055 votes (82.8%).
-  - Jefferson has 38,855 votes (10.5%).
-  - Arapahoe has 24,801 votes (6.7%).
+  - Denver has 306,055 votes (82.8% of the total votes).
+  - Jefferson has 38,855 votes (10.5% of the total votes).
+  - Arapahoe has 24,801 votes (6.7% of the total votes).
 - **Denver County has the largest number of votes from a single County.**
 
 - Breakdown of total votes by candidate:
@@ -29,3 +29,4 @@ The analysis of this election has shown the following results:
 
 ## Challenge Summary
 
+## How to Change Code for Future Elections
