@@ -37,7 +37,7 @@ Modifying this script for future elections can be accomplished with the followin
 The first step is changing the folder and file names on lines 9 and 11 of PyPoll to match your new data file names.
 ```python
 9  file_to_load = os.path.join("Folder_with_data", "new_election_data.csv")
-11 file_to_save = os.path.join("Folde_with_text_file", "new_analysis.txt")
+11 file_to_save = os.path.join("Folder_with_text_file", "new_analysis.txt")
 ```
 It is important to inspect new CSV data files to determine the layout and location of data. On lines 47 and 50, your row indexes may need adjusting depending on the layout of your new data file. These row numbers are based on the data in the header row. The general format is below:
 ```python
