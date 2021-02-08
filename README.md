@@ -8,7 +8,7 @@ The purpose of this election audit and analysis is to determine the winner of an
 **Data Source:** election_results.csv (found in "Resources")  
 **Software:** Python 3.8.2
 
-## Summary of Findings
+## Summary of Election Results
 The analysis of this election has shown the following results:
 - There were **369,711 votes** in this election.
 - Breakdown of total votes by County:
