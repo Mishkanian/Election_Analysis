@@ -25,6 +25,11 @@ The analysis of this election has shown the following results:
   - Diana DeGette received the most votes (272,892 votes).
 
 ## Project Challenges
+The only challenge when creating this script was having the county with the largest turnout to properly print. Arapahoe was printing instead of Denver, which was clearly incorrect based on the total vote outcomes. It was found that the location of this error was the conditional statement on lines 105 to 107. The reason Arapahoe was printing instead of Denver was due to the omission of the following code on line 106:
+```python
+106 largest_voter_turnout = county_vote_count
+```
+Due to this omission, the value largest_voter_turnout was constantly overwritten in each loop.
 
 ## How to Modify Script for Future Elections
 Modifying this script for future elections can be accomplished with the following methods:
@@ -34,9 +39,13 @@ The first step is changing the folder and file names on lines 9 and 11 of PyPoll
 9  file_to_load = os.path.join("Folder_with_data", "new_election_data.csv")
 11 file_to_save = os.path.join("Folde_with_text_file", "new_analysis.txt")
 ```
-It is important to inspect new CSV data files to determine the layout and location of data. On lines 47 and 50, your row indexes may need adjusting depending on the layout of your new data file:
+It is important to inspect new CSV data files to determine the layout and location of data. On lines 47 and 50, your row indexes may need adjusting depending on the layout of your new data file. These row numbers are based on the data in the header row. The general format is below:
 ```python
-47 candidate_name = row[row_number_ with_candidate_here]
-50 county_name = row[row_number_ with_county_here]
+47 candidate_name = row[row_number_with_candidate_here]
+50 county_name = row[row_number_with_county_here]
+```
+For example, if your CSV data file has candidate names in the second column, your code on line 47 would be:
+```python
+47 candidate_name = row[1]
 ```
 Author: Michael Mishkanian
