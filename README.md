@@ -1,7 +1,7 @@
 # Election Audit and Analysis
 
 ## Project Overview
-The purpose of this election audit and analysis is to determine the winner of an elction based on over 369,000 voter data points. Other objectives include determining votes by County and largest County turnout.
+The purpose of this election audit and analysis is to determine the winner of an elction based on over 369,000 voter data points. Other objectives include determining total votes by County and the largest County turnout.
 ---
 
 ## Resources
