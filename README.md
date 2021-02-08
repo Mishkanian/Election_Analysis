@@ -32,14 +32,14 @@ A challenge when creating this script was having the county with the largest tur
 Due to this omission, the value largest_voter_turnout was constantly overwritten in each loop. Since Arapahoe is the final County data, it was printed instead of Denver.
 
 ## How to Modify Script for Future Elections
-Modifying this script for future elections can be accomplished with the following methods:
+An election commission can modify this script to be used for any election. Modifying this script for future elections can be accomplished with the following methods:
 
-The first step is changing the folder and file names on lines 9 and 11 of PyPoll to match your new data file names.
+The first step is changing the folder and file names on lines 9 and 11 of PyPoll to match your new data file names. The general format is as follows:
 ```python
 9  file_to_load = os.path.join("Folder_with_data", "new_election_data.csv")
 11 file_to_save = os.path.join("Folder_with_text_file", "new_analysis.txt")
 ```
-It is important to inspect new CSV data files to determine the layout and location of data. On lines 47 and 50, your row indexes may need adjusting depending on the layout of your new data file. These row numbers are based on the data in the CSV header row. The general format is below:
+It is important to inspect new CSV data files to determine the layout and the location of data. On lines 47 and 50, your row indexes may need to be adjusted depending on the layout of your new data file. These row indexes are based on the data in the CSV header row. The general format is below:
 ```python
 47 candidate_name = row[row_number_with_candidate_here]
 50 county_name = row[row_number_with_county_here]
@@ -48,5 +48,6 @@ For example, if your CSV data file has candidate names in the second column, you
 ```python
 47 candidate_name = row[1]
 ```
+By following these methods, an election commission can change PyPoll to analyze any similar election. 
 
 Author: Michael Mishkanian
