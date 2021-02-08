@@ -24,9 +24,19 @@ The analysis of this election has shown the following results:
 - **The winner of the election is Diana DeGette.**
   - Diana DeGette received the most votes (272,892 votes).
 
-## Challenge Overview
+## Project Challenges
 
+## How to Modify Script for Future Elections
+Modifying this script for future elections can be accomplished with the following methods:
 
-## Challenge Summary
-
-## How to Change Code for Future Elections
+The first step is changing the folder and file names on lines 9 and 11 of PyPoll to match your new data file names.
+```python
+9  file_to_load = os.path.join("Folder_with_data", "new_election_data.csv")
+11 file_to_save = os.path.join("Folde_with_text_file", "new_analysis.txt")
+```
+It is important to inspect new CSV data files to determine the layout and location of data. On lines 47 and 50, your row indexes may need adjusting depending on the layout of your new data file:
+```python
+47 candidate_name = row[row_number_ with_candidate_here]
+50 county_name = row[row_number_ with_county_here]
+```
+Author: Michael Mishkanian
