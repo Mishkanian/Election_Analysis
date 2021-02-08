@@ -25,7 +25,7 @@ The analysis of this election has shown the following results:
   - Diana DeGette received the most votes (272,892 votes).
 
 ## Project Challenges
-The only challenge when creating this script was having the county with the largest turnout to properly print. Arapahoe was printing instead of Denver, which was clearly incorrect based on the total vote outcomes. It was found that the location of this error was the conditional statement on lines 105 to 107. The reason Arapahoe was printing instead of Denver was due to the omission of the following code on line 106:
+A challenge when creating this script was having the county with the largest turnout to properly print. Arapahoe was printing instead of Denver, which was clearly incorrect based on the total vote outcomes. It was found that the location of this error was the conditional statement on lines 105 to 107. The reason Arapahoe was printing instead of Denver was due to the omission of the following code on line 106:
 ```python
 106 largest_voter_turnout = county_vote_count
 ```
