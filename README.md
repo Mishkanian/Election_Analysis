@@ -29,7 +29,7 @@ A challenge when creating this script was having the county with the largest tur
 ```python
 106 largest_voter_turnout = county_vote_count
 ```
-Due to this omission, the value largest_voter_turnout was constantly overwritten in each loop.
+Due to this omission, the value largest_voter_turnout was constantly overwritten in each loop. Since Arapahoe is the final County data, it was printed instead of Denver.
 
 ## How to Modify Script for Future Elections
 Modifying this script for future elections can be accomplished with the following methods:
